@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap 4 Drills</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1 class="text-center">First Bootstrap Project</h1>
+            </div>
+
+            <div class="row">
+                <div class="container">
+                    <div class="row align-items-start">
+                        <div class="col-4">
+                            This is One
+                        </div>
+                        <div class="col-4">
+                            This is Two
+                        </div>
+                        <div class="col-4">
+                            This is Three
+                        </div>
+                    </div>
+                </div>
+
+
+                <!----
+                <form>
+                    <div class="form-group row">
+                        <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="col-sm-5 col-form-label" id="staticEmail"
+                                value="email@example.com">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputPassword" class="col-sm col-form-label">Password</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                        </div>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Cats
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                        <label class="form-check-label" for="defaultCheck2">
+                            Dogs
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                            value="option1" checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                            Cheese Pizza
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                            value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
+                            Hawaiian Pizza
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                            value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
+                            Supreme Pizza
+                        </label>
+                    </div>
+                    <button type="button" class="btn btn-primary" >Primary</button>
+                </form> -->
+
+
+                <form class="border border-primary p-3 col-12">
+                    <div class="form-group">
+                        <label for="text1">Email</label>
+                        <input id="text1" name="text1" placeholder="Email" type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="text">Password</label>
+                        <input id="text" name="text" placeholder="Password" type="text" required="required"
+                            class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <div>
+                            <div class="custom-controls-stacked">
+                                <div class="custom-control custom-checkbox">
+                                    <input name="checkbox" id="checkbox_0" type="checkbox" class="custom-control-input"
+                                        value="Cats">
+                                    <label for="checkbox_0" class="custom-control-label">Cats</label>
+                                </div>
+                            </div>
+                            <div class="custom-controls-stacked">
+                                <div class="custom-control custom-checkbox">
+                                    <input name="checkbox" id="checkbox_1" type="checkbox" class="custom-control-input"
+                                        value="Dog" checked="checked">
+                                    <label for="checkbox_1" class="custom-control-label">Dogs</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div>
+                            <div class="custom-controls-stacked">
+                                <div class="custom-control custom-radio">
+                                    <input name="radio" id="radio_0" type="radio" class="custom-control-input"
+                                        value="Cheese">
+                                    <label for="radio_0" class="custom-control-label">Cheese Pizza</label>
+                                </div>
+                            </div>
+                            <div class="custom-controls-stacked">
+                                <div class="custom-control custom-radio">
+                                    <input name="radio" id="radio_1" type="radio" class="custom-control-input"
+                                        value="Hawaiian">
+                                    <label for="radio_1" class="custom-control-label">Hawaiian Pizza</label>
+                                </div>
+                            </div>
+                            <div class="custom-controls-stacked">
+                                <div class="custom-control custom-radio">
+                                    <input name="radio" id="radio_2" type="radio" class="custom-control-input"
+                                        value="Supreme">
+                                    <label for="radio_2" class="custom-control-label">Supreme Pizza</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button name="submit" type="submit" class="btn btn-primary">Confirm Identity</button>
+                    </div>
+                </form>
+
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3 class="card-title">Amy</h3>
+                                <p class="card-text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam at totam qui
+                                        illo
+                                        inventore vel odit ut sit, repellendus doloribus quo amet exercitationem sequi
+                                        laborum, consequuntur architecto! Iure, sunt voluptates.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="card">
+
+                            <div class="card-body">
+                                <h3 class="card-title">Becky</h3>
+                                <p class="card-text">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, consequuntur
+                                        tenetur commodi blanditiis ratione ex possimus odit adipisci dicta perferendis
+                                        officiis aspernatur aperiam voluptatum nesciunt inventore dolor cum eligendi?
+                                    </p>.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm">
+                        <div class="card">
+
+                            <div class="card-body">
+                                <h3 class="card-title">April</h3>
+                                <p class="card-text">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum repellendus
+                                        officiis provident aliquam, expedita facere dignissimos at beatae tempora cumque
+                                        voluptas quis, alias accusamus unde sequi nisi consequuntur deleniti
+                                        voluptatibus.
+                                    </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm">
+                <div class="card">
+
+                    <div class="card-body">
+                        <h3 class="card-title">Tiffany</h3>
+                        <p class="card-text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quam ab obcaecati
+                                labore itaque, ipsa maiores fugit. Autem consequatur, voluptatibus, in
+                                praesentium
+                                vero corrupti odit ipsum porro nemo voluptatum esse.</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm">
+                <div class="card">
+
+                    <div class="card-body">
+                        <h3 class="card-title">Sarah</h3>
+                        <p class="card-text">Sarah is cool she is funny and a nerd <p>Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Eveniet delectus labore officia! Quam id doloribus
+                                repellat enim repellendus officiis, modi inventore obcaecati architecto
+                                excepturi
+                                doloremque dicta tempora eius. Sed, optio?</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm">
+                <div class="card">
+
+                    <div class="card-body">
+                        <h3 class="card-title">Destinee</h3>
+                        <p class="card-text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque sequi nulla
+                                laborum
+                                repellendus tenetur temporibus dolor culpa tempora sint magnam, eius laboriosam
+                                facere nesciunt blanditiis ipsum. Maxime libero minima illo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="row">
+        <div class="col-4">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Special title treatment</h3>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Special title treatment</h3>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Special title treatment</h3>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-4">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Special title treatment</h3>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Special title treatment</h3>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Special title treatment</h3>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
